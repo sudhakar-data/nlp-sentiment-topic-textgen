@@ -1,0 +1,974 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns  Rows
+0       df1      931   999
+1       df2      931  1000
+
+Column Summary
+--------------
+
+Number of columns in common: 931
+Number of columns in df1 but not in df2: 0
+Number of columns in df2 but not in df1: 0
+
+Row Summary
+-----------
+
+Matched on: index
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 999
+Number of rows in df1 but not in df2: 0
+Number of rows in df2 but not in df1: 1
+
+Number of rows with some compared columns unequal: 561
+Number of rows with all compared columns equal: 438
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 122
+Number of columns compared with all values equal: 809
+Total number of values which compare unequal: 4,320
+
+Columns with Unequal Values or Types
+------------------------------------
+
+                            Column df1 dtype df2 dtype  # Unequal  Max Diff  # Null Diff
+1              avg_3_r_pmt_bal_12m    object    object          1         0            0
+0              avg_3_r_pmt_bal_36m    object    object          2         0            0
+121            avg_3_r_pmt_bal_cur    object    object          2         0            0
+81         avg_fin_liq_bal_vel_12m    object    object        488         0            0
+4          avg_fin_liq_bal_vel_48m    object    object        558         0            0
+80         avg_fin_liq_bal_vel_cur    object    object        439         0            0
+85           avg_fin_r_pmt_bal_12m    object    object          3         0            0
+47           avg_fin_r_pmt_bal_36m    object    object          6         0            0
+8            avg_fin_r_pmt_bal_48m    object    object          6         0            0
+76           avg_fin_r_pmt_bal_cur    object    object          1         0            0
+106                card_utiliz_12m    object    object          8         0            0
+31                 card_utiliz_36m    object    object          5         0            0
+10                 card_utiliz_48m    object    object          4         0            0
+82                 card_utiliz_cur    object    object         12         0            0
+110     charge_off_amount_inst_12m    object    object          2         0            0
+23      charge_off_amount_inst_36m    object    object          4         0            0
+74      charge_off_amount_inst_48m    object    object          4         0            0
+5                  inst_utiliz_12m    object    object          2         0            0
+109                inst_utiliz_36m    object    object          3         0            0
+22                 inst_utiliz_48m    object    object          3         0            0
+13                lease_utiliz_12m    object    object          2         0            0
+36                lease_utiliz_36m    object    object          3         0            0
+32                lease_utiliz_48m    object    object          3         0            0
+11             max_3_r_pmt_bal_12m    object    object         40         0            0
+70             max_3_r_pmt_bal_36m    object    object         69         0            0
+62             max_3_r_pmt_bal_48m    object    object         70         0            0
+96             max_3_r_pmt_bal_cur    object    object         17         0            0
+93       max_cur_creditlimit_1_12m    object    object          2         0            0
+26       max_cur_creditlimit_1_36m    object    object          4         0            0
+51       max_cur_creditlimit_1_48m    object    object          4         0            0
+108      max_cur_creditlimit_4_12m    object    object          2         0            0
+53       max_cur_creditlimit_4_36m    object    object          3         0            0
+107      max_cur_creditlimit_4_48m    object    object          3         0            0
+42     max_cur_creditlimit_fin_12m    object    object          3         0            3
+78     max_cur_creditlimit_fin_36m    object    object          3         0            3
+7      max_cur_creditlimit_fin_48m    object    object          3         0            3
+88     max_cur_creditlimit_fin_cur    object    object          4         0            4
+64    max_cur_creditlimit_inst_12m    object    object          2         0            0
+63    max_cur_creditlimit_inst_36m    object    object          3         0            0
+86    max_cur_creditlimit_inst_48m    object    object          3         0            0
+100        max_fin_liq_bal_vel_12m    object    object        481         0            0
+15         max_fin_liq_bal_vel_48m    object    object        547         0            0
+97         max_fin_liq_bal_vel_cur    object    object        437         0            0
+60           max_fin_r_pmt_bal_12m    object    object         44         0            0
+115          max_fin_r_pmt_bal_36m    object    object         61         0            0
+9            max_fin_r_pmt_bal_48m    object    object         63         0            0
+71           max_fin_r_pmt_bal_cur    object    object         22         0            0
+29         max_inst_pst_due_b1_12m    object    object          1         0            0
+18         max_inst_pst_due_b1_36m    object    object          2         0            0
+50         max_inst_pst_due_b1_48m    object    object          2         0            0
+14         max_inst_pst_due_b2_12m    object    object          1         0            0
+102        max_inst_pst_due_b2_36m    object    object          2         0            0
+84         max_inst_pst_due_b2_48m    object    object          2         0            0
+43         max_inst_pst_due_b3_12m    object    object          1         0            0
+25         max_inst_pst_due_b3_36m    object    object          2         0            0
+105        max_inst_pst_due_b3_48m    object    object          2         0            0
+103       max_inst_pst_due_b4p_12m    object    object          1         0            0
+79        max_inst_pst_due_b4p_36m    object    object          2         0            0
+66        max_inst_pst_due_b4p_48m    object    object          2         0            0
+114            min_3_r_pmt_bal_cur    object    object          1         0            0
+35           min_fin_r_pmt_bal_12m    object    object          1         0            0
+118          min_fin_r_pmt_bal_36m    object    object          1         0            0
+116          min_fin_r_pmt_bal_48m    object    object          1         0            0
+41        min_inst_liq_bal_vel_12m    object    object        231         0            0
+111       min_inst_liq_bal_vel_48m    object    object        283         0            0
+92        min_inst_liq_bal_vel_cur    object    object        205         0            0
+28      num_acct_inst_dlq_ag1p_12m    object    object          2         0            0
+58      num_acct_inst_dlq_ag1p_36m    object    object          3         0            0
+6       num_acct_inst_dlq_ag1p_48m    object    object          3         0            0
+49      num_acct_inst_dlq_ag2p_12m    object    object          2         0            0
+101     num_acct_inst_dlq_ag2p_36m    object    object          3         0            0
+91      num_acct_inst_dlq_ag2p_48m    object    object          3         0            0
+34      num_acct_inst_dlq_ag3p_12m    object    object          2         0            0
+89      num_acct_inst_dlq_ag3p_36m    object    object          3         0            0
+45      num_acct_inst_dlq_ag3p_48m    object    object          3         0            0
+94      num_acct_inst_dlq_ag4p_12m    object    object          2         0            0
+90      num_acct_inst_dlq_ag4p_36m    object    object          4         0            0
+3       num_acct_inst_dlq_ag4p_48m    object    object          4         0            0
+55         num_charge_off_inst_12m    object    object          2         0            0
+2          num_charge_off_inst_36m    object    object          4         0            0
+61         num_charge_off_inst_48m    object    object          4         0            0
+37   org_credit_lease_amount_4_12m    object    object          1         0            0
+77   org_credit_lease_amount_4_36m    object    object          2         0            0
+17   org_credit_lease_amount_4_48m    object    object          2         0            0
+112   org_credit_loan_amount_1_36m    object    object          4         0            0
+65    org_credit_loan_amount_1_48m    object    object          4         0            0
+48        org_creditlimit_inst_12m    object    object          1         0            0
+117       org_creditlimit_inst_36m    object    object          2         0            0
+54        org_creditlimit_inst_48m    object    object          2         0            0
+59             pct_co_trd_inst_12m    object    object          2         0            0
+99             pct_co_trd_inst_36m    object    object          4         0            0
+19             pct_co_trd_inst_48m    object    object          3         0            0
+75        pct_pd_ag1p_bal_inst_12m    object    object          1         0            0
+120       pct_pd_ag1p_bal_inst_36m    object    object          2         0            0
+119       pct_pd_ag1p_bal_inst_48m    object    object          2         0            0
+44        pct_pd_ag2p_bal_inst_12m    object    object          1         0            0
+20        pct_pd_ag2p_bal_inst_36m    object    object          2         0            0
+68        pct_pd_ag2p_bal_inst_48m    object    object          2         0            0
+56        pct_pd_ag3p_bal_inst_12m    object    object          1         0            0
+38        pct_pd_ag3p_bal_inst_36m    object    object          2         0            0
+73        pct_pd_ag3p_bal_inst_48m    object    object          2         0            0
+24        pct_pd_ag4p_bal_inst_12m    object    object          1         0            0
+16        pct_pd_ag4p_bal_inst_36m    object    object          2         0            0
+95        pct_pd_ag4p_bal_inst_48m    object    object          2         0            0
+21                 term_utiliz_12m    object    object          2         0            0
+72                 term_utiliz_36m    object    object          4         0            0
+67                 term_utiliz_48m    object    object          4         0            0
+46    total_past_due_cat1_inst_12m    object    object          1         0            0
+57    total_past_due_cat1_inst_36m    object    object          2         0            0
+39    total_past_due_cat1_inst_48m    object    object          2         0            0
+87    total_past_due_cat2_inst_12m    object    object          1         0            0
+30    total_past_due_cat2_inst_36m    object    object          2         0            0
+98    total_past_due_cat2_inst_48m    object    object          2         0            0
+33    total_past_due_cat3_inst_12m    object    object          1         0            0
+83    total_past_due_cat3_inst_36m    object    object          2         0            0
+104   total_past_due_cat3_inst_48m    object    object          2         0            0
+69   total_past_due_cat4p_inst_12m    object    object          1         0            0
+113  total_past_due_cat4p_inst_36m    object    object          2         0            0
+40   total_past_due_cat4p_inst_48m    object    object          2         0            0
+52         total_past_due_inst_12m    object    object          1         0            0
+12         total_past_due_inst_36m    object    object          2         0            0
+27         total_past_due_inst_48m    object    object          2         0            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+             avg_3_r_pmt_bal_36m (df1) avg_3_r_pmt_bal_36m (df2)
+DNB_DUNS                                                        
+D00007911753                  108.6722                   108.672
+D00042653634                  127.2424                   127.242
+
+             avg_3_r_pmt_bal_12m (df1) avg_3_r_pmt_bal_12m (df2)
+DNB_DUNS                                                        
+D00007911753                  357.9579                   357.958
+
+             num_charge_off_inst_36m (df1) num_charge_off_inst_36m (df2)
+DNB_DUNS                                                                
+D00018669871                        999999                             0
+D00180234429                        999999                             0
+D00868331385                        999999                             0
+D00067138441                        999999                             0
+
+             num_acct_inst_dlq_ag4p_48m (df1) num_acct_inst_dlq_ag4p_48m (df2)
+DNB_DUNS                                                                      
+D00018669871                           999999                                0
+D00868331385                           999999                                0
+D00180234429                           999999                                0
+D00067138441                           999999                                0
+
+             avg_fin_liq_bal_vel_48m (df1) avg_fin_liq_bal_vel_48m (df2)
+DNB_DUNS                                                                
+A00008314888                             4                        3.6488
+D00074849688                            18                       18.3135
+D00068727320                             2                        1.5633
+A00004025080                             1                        1.4252
+D00006928923                            24                       24.0496
+D00075172239                             5                        5.4933
+D00607722134                            -2                       -1.5513
+D00962754128                             2                        1.5699
+A00050894182                             1                        1.0957
+A00021054309                            11                       11.0263
+
+             inst_utiliz_12m (df1) inst_utiliz_12m (df2)
+DNB_DUNS                                                
+D00067138441                 99.99                 99.98
+D00180234429                 99.99                 99.98
+
+             num_acct_inst_dlq_ag1p_48m (df1) num_acct_inst_dlq_ag1p_48m (df2)
+DNB_DUNS                                                                      
+D00180234429                           999999                                0
+D00067138441                           999999                                0
+D00018669871                           999999                                0
+
+             max_cur_creditlimit_fin_48m (df1) max_cur_creditlimit_fin_48m (df2)
+DNB_DUNS                                                                        
+D00067138441                               NaN                                 0
+D00868331385                               NaN                                 0
+D00180234429                               NaN                                 0
+
+             avg_fin_r_pmt_bal_48m (df1) avg_fin_r_pmt_bal_48m (df2)
+DNB_DUNS                                                            
+D00782128367                   6745.6868                     6745.69
+D00003261245                    111.9101                     111.910
+D00001954718                    786.2674                     786.267
+D00045756715                   4002.5364                     4002.54
+A00050508356                    301.3333                     301.333
+D00033315535                   1966.0885                     1966.09
+
+             max_fin_r_pmt_bal_48m (df1) max_fin_r_pmt_bal_48m (df2)
+DNB_DUNS                                                            
+D00102412244                   1315.3333                     1315.33
+D00018810275                    106.2058                     106.206
+D00806715603                   1058.6315                     1058.63
+D00014495014                    455.3333                     455.333
+D00041157397                    671.1666                     671.167
+D00006980080                   1984.7916                     1984.79
+D00089535694                   1243.9166                     1243.92
+D00004175550                    833.3333                     833.333
+D00051369977                    305.4285                     305.429
+D00147863401                    352.9933                     352.993
+
+             card_utiliz_48m (df1) card_utiliz_48m (df2)
+DNB_DUNS                                                
+D00028404242                  0.00                 99.98
+D00038088415                  0.00                 99.98
+D00032827657                  0.00                 99.98
+D00798321803                  0.00                 99.98
+
+             max_3_r_pmt_bal_12m (df1) max_3_r_pmt_bal_12m (df2)
+DNB_DUNS                                                        
+D00072656630                  140.4285                   140.429
+D00001368265                  207.6666                   207.667
+D00784596165                  547.8409                   547.841
+D00006249189                  279.6666                   279.667
+D00007347602                  276.7045                   276.705
+D00038107744                  260.6666                   260.667
+D00042653634                  231.5718                   231.572
+D00066169848                  145.3235                   145.324
+D00041749771                  208.3571                   208.357
+D00956914337                 1055.7267                   1055.73
+
+             total_past_due_inst_36m (df1) total_past_due_inst_36m (df2)
+DNB_DUNS                                                                
+D00067138441                   99999999999                             0
+D00018669871                   99999999999                             0
+
+             lease_utiliz_12m (df1) lease_utiliz_12m (df2)
+DNB_DUNS                                                  
+D00067138441                  99.99                  99.98
+D00180234429                  99.99                  99.98
+
+             max_inst_pst_due_b2_12m (df1) max_inst_pst_due_b2_12m (df2)
+DNB_DUNS                                                                
+D00067138441                   99999999999                             0
+
+             max_fin_liq_bal_vel_48m (df1) max_fin_liq_bal_vel_48m (df2)
+DNB_DUNS                                                                
+D00076786987                          4330                     4329.6050
+D00826939985                           129                      128.7555
+D00070110333                         15375                    15374.9650
+D00801325895                         54521                    54520.5494
+D00010944650                         19027                    19027.0765
+D00125977830                           104                      104.1927
+D00622681351                          4775                     4775.0134
+D00074421199                          6125                     6124.7151
+A00019243814                            57                       56.8841
+D00070983799                             2                        2.4419
+
+             pct_pd_ag4p_bal_inst_36m (df1) pct_pd_ag4p_bal_inst_36m (df2)
+DNB_DUNS                                                                  
+D00067138441                          99.99                           0.00
+D00018669871                          99.99                           0.00
+
+             org_credit_lease_amount_4_48m (df1) org_credit_lease_amount_4_48m (df2)
+DNB_DUNS                                                                            
+D00868331385                         99999999999                                   0
+D00067138441                         99999999999                                   0
+
+             max_inst_pst_due_b1_36m (df1) max_inst_pst_due_b1_36m (df2)
+DNB_DUNS                                                                
+D00018669871                   99999999999                             0
+D00067138441                   99999999999                             0
+
+             pct_co_trd_inst_48m (df1) pct_co_trd_inst_48m (df2)
+DNB_DUNS                                                        
+D00868331385                    999.99                      0.00
+D00067138441                    999.99                      0.00
+D00180234429                    999.99                      0.00
+
+             pct_pd_ag2p_bal_inst_36m (df1) pct_pd_ag2p_bal_inst_36m (df2)
+DNB_DUNS                                                                  
+D00067138441                          99.99                           0.00
+D00018669871                          99.99                           0.00
+
+             term_utiliz_12m (df1) term_utiliz_12m (df2)
+DNB_DUNS                                                
+D00180234429                 99.99                 99.98
+D00067138441                 99.99                 99.98
+
+             inst_utiliz_48m (df1) inst_utiliz_48m (df2)
+DNB_DUNS                                                
+D00067138441                 99.99                 99.98
+D00180234429                 99.99                 99.98
+D00868331385                 99.99                 99.98
+
+             charge_off_amount_inst_36m (df1) charge_off_amount_inst_36m (df2)
+DNB_DUNS                                                                      
+D00868331385                      99999999999                                0
+D00067138441                      99999999999                                0
+D00018669871                      99999999999                                0
+D00180234429                      99999999999                                0
+
+             pct_pd_ag4p_bal_inst_12m (df1) pct_pd_ag4p_bal_inst_12m (df2)
+DNB_DUNS                                                                  
+D00067138441                          99.99                           0.00
+
+             max_inst_pst_due_b3_36m (df1) max_inst_pst_due_b3_36m (df2)
+DNB_DUNS                                                                
+D00018669871                   99999999999                             0
+D00067138441                   99999999999                             0
+
+             max_cur_creditlimit_1_36m (df1) max_cur_creditlimit_1_36m (df2)
+DNB_DUNS                                                                    
+D00180234429                     99999999999                               0
+D00067138441                     99999999999                               0
+D00868331385                     99999999999                               0
+D00018669871                     99999999999                               0
+
+             total_past_due_inst_48m (df1) total_past_due_inst_48m (df2)
+DNB_DUNS                                                                
+D00018669871                   99999999999                             0
+D00067138441                   99999999999                             0
+
+             num_acct_inst_dlq_ag1p_12m (df1) num_acct_inst_dlq_ag1p_12m (df2)
+DNB_DUNS                                                                      
+D00180234429                           999999                                0
+D00067138441                           999999                                0
+
+             max_inst_pst_due_b1_12m (df1) max_inst_pst_due_b1_12m (df2)
+DNB_DUNS                                                                
+D00067138441                   99999999999                             0
+
+             total_past_due_cat2_inst_36m (df1) total_past_due_cat2_inst_36m (df2)
+DNB_DUNS                                                                          
+D00018669871                        99999999999                                  0
+D00067138441                        99999999999                                  0
+
+             card_utiliz_36m (df1) card_utiliz_36m (df2)
+DNB_DUNS                                                
+D00032827657                  0.00                 99.98
+D00038088415                  0.00                 99.98
+D00028404242                  0.00                 99.98
+D00035542711                  0.00                 99.98
+D00798321803                  0.00                 99.98
+
+             lease_utiliz_48m (df1) lease_utiliz_48m (df2)
+DNB_DUNS                                                  
+D00868331385                  99.99                  99.98
+D00180234429                  99.99                  99.98
+D00067138441                  99.99                  99.98
+
+             total_past_due_cat3_inst_12m (df1) total_past_due_cat3_inst_12m (df2)
+DNB_DUNS                                                                          
+D00067138441                        99999999999                                  0
+
+             num_acct_inst_dlq_ag3p_12m (df1) num_acct_inst_dlq_ag3p_12m (df2)
+DNB_DUNS                                                                      
+D00180234429                           999999                                0
+D00067138441                           999999                                0
+
+             min_fin_r_pmt_bal_12m (df1) min_fin_r_pmt_bal_12m (df2)
+DNB_DUNS                                                            
+A00050508356                    301.3333                     301.333
+
+             lease_utiliz_36m (df1) lease_utiliz_36m (df2)
+DNB_DUNS                                                  
+D00067138441                  99.99                  99.98
+D00180234429                  99.99                  99.98
+D00868331385                  99.99                  99.98
+
+             org_credit_lease_amount_4_12m (df1) org_credit_lease_amount_4_12m (df2)
+DNB_DUNS                                                                            
+D00067138441                         99999999999                                   0
+
+             pct_pd_ag3p_bal_inst_36m (df1) pct_pd_ag3p_bal_inst_36m (df2)
+DNB_DUNS                                                                  
+D00067138441                          99.99                           0.00
+D00018669871                          99.99                           0.00
+
+             total_past_due_cat1_inst_48m (df1) total_past_due_cat1_inst_48m (df2)
+DNB_DUNS                                                                          
+D00018669871                        99999999999                                  0
+D00067138441                        99999999999                                  0
+
+             total_past_due_cat4p_inst_48m (df1) total_past_due_cat4p_inst_48m (df2)
+DNB_DUNS                                                                            
+D00067138441                         99999999999                                   0
+D00018669871                         99999999999                                   0
+
+             min_inst_liq_bal_vel_12m (df1) min_inst_liq_bal_vel_12m (df2)
+DNB_DUNS                                                                  
+D00089666478                             -0                        -0.1377
+D00199163007                            -75                       -75.2229
+D00038107744                             -2                        -2.3106
+D00043508290                            -75                       -75.3967
+D00080683048                             -6                        -6.3667
+D00074562810                              0                         0.0173
+D00007960446                            -13                       -13.1399
+D00054249255                             -4                        -3.8522
+D00035333170                            -20                       -20.4617
+D00363596297                            -18                       -18.2345
+
+             max_cur_creditlimit_fin_12m (df1) max_cur_creditlimit_fin_12m (df2)
+DNB_DUNS                                                                        
+D00067138441                               NaN                                 0
+D00180234429                               NaN                                 0
+A00008314888                               NaN                                 0
+
+             max_inst_pst_due_b3_12m (df1) max_inst_pst_due_b3_12m (df2)
+DNB_DUNS                                                                
+D00067138441                   99999999999                             0
+
+             pct_pd_ag2p_bal_inst_12m (df1) pct_pd_ag2p_bal_inst_12m (df2)
+DNB_DUNS                                                                  
+D00067138441                          99.99                           0.00
+
+             num_acct_inst_dlq_ag3p_48m (df1) num_acct_inst_dlq_ag3p_48m (df2)
+DNB_DUNS                                                                      
+D00067138441                           999999                                0
+D00018669871                           999999                                0
+D00180234429                           999999                                0
+
+             total_past_due_cat1_inst_12m (df1) total_past_due_cat1_inst_12m (df2)
+DNB_DUNS                                                                          
+D00067138441                        99999999999                                  0
+
+             avg_fin_r_pmt_bal_36m (df1) avg_fin_r_pmt_bal_36m (df2)
+DNB_DUNS                                                            
+D00045756715                   4146.3048                     4146.30
+D00782128367                   7339.4250                     7339.43
+D00033315535                   1966.0885                     1966.09
+D00042653634                    116.9977                     116.998
+D00001954718                    561.4528                     561.453
+A00050508356                    301.3333                     301.333
+
+             org_creditlimit_inst_12m (df1) org_creditlimit_inst_12m (df2)
+DNB_DUNS                                                                  
+D00067138441                    99999999999                              0
+
+             num_acct_inst_dlq_ag2p_12m (df1) num_acct_inst_dlq_ag2p_12m (df2)
+DNB_DUNS                                                                      
+D00180234429                           999999                                0
+D00067138441                           999999                                0
+
+             max_inst_pst_due_b1_48m (df1) max_inst_pst_due_b1_48m (df2)
+DNB_DUNS                                                                
+D00067138441                   99999999999                             0
+D00018669871                   99999999999                             0
+
+             max_cur_creditlimit_1_48m (df1) max_cur_creditlimit_1_48m (df2)
+DNB_DUNS                                                                    
+D00018669871                     99999999999                               0
+D00067138441                     99999999999                               0
+D00868331385                     99999999999                               0
+D00180234429                     99999999999                               0
+
+             total_past_due_inst_12m (df1) total_past_due_inst_12m (df2)
+DNB_DUNS                                                                
+D00067138441                   99999999999                             0
+
+             max_cur_creditlimit_4_36m (df1) max_cur_creditlimit_4_36m (df2)
+DNB_DUNS                                                                    
+D00180234429                     99999999999                               0
+D00868331385                     99999999999                               0
+D00067138441                     99999999999                               0
+
+             org_creditlimit_inst_48m (df1) org_creditlimit_inst_48m (df2)
+DNB_DUNS                                                                  
+D00067138441                    99999999999                              0
+D00868331385                    99999999999                              0
+
+             num_charge_off_inst_12m (df1) num_charge_off_inst_12m (df2)
+DNB_DUNS                                                                
+D00067138441                        999999                             0
+D00180234429                        999999                             0
+
+             pct_pd_ag3p_bal_inst_12m (df1) pct_pd_ag3p_bal_inst_12m (df2)
+DNB_DUNS                                                                  
+D00067138441                          99.99                           0.00
+
+             total_past_due_cat1_inst_36m (df1) total_past_due_cat1_inst_36m (df2)
+DNB_DUNS                                                                          
+D00067138441                        99999999999                                  0
+D00018669871                        99999999999                                  0
+
+             num_acct_inst_dlq_ag1p_36m (df1) num_acct_inst_dlq_ag1p_36m (df2)
+DNB_DUNS                                                                      
+D00067138441                           999999                                0
+D00180234429                           999999                                0
+D00018669871                           999999                                0
+
+             pct_co_trd_inst_12m (df1) pct_co_trd_inst_12m (df2)
+DNB_DUNS                                                        
+D00067138441                    999.99                      0.00
+D00180234429                    999.99                      0.00
+
+             max_fin_r_pmt_bal_12m (df1) max_fin_r_pmt_bal_12m (df2)
+DNB_DUNS                                                            
+D00074804501                    353.6363                     353.636
+D00006987648                   1959.0769                     1959.08
+D00074849688                    247.3333                     247.333
+D00106638901                    184.3333                     184.333
+A00050508356                    301.3333                     301.333
+D00006326938                    109.3447                     109.345
+D00004467924                    232.7746                     232.775
+D00013005702                    295.2272                     295.227
+D00092282839                    116.0555                     116.056
+D00956914337                   1055.7267                     1055.73
+
+             num_charge_off_inst_48m (df1) num_charge_off_inst_48m (df2)
+DNB_DUNS                                                                
+D00868331385                        999999                             0
+D00018669871                        999999                             0
+D00180234429                        999999                             0
+D00067138441                        999999                             0
+
+             max_3_r_pmt_bal_48m (df1) max_3_r_pmt_bal_48m (df2)
+DNB_DUNS                                                        
+D00051369977                  305.4285                   305.429
+D00826949224                 1795.1666                   1795.17
+D00047107032                  658.1463                   658.146
+D00007960446                  130.7803                   130.780
+D00006924948                 2087.2307                   2087.23
+D00106638901                  200.3333                   200.333
+D00008873804                 1043.0476                   1043.05
+D00363596297                  389.3529                   389.353
+D00013005702                  295.2272                   295.227
+D00068724442                  127.2727                   127.273
+
+             max_cur_creditlimit_inst_36m (df1) max_cur_creditlimit_inst_36m (df2)
+DNB_DUNS                                                                          
+D00180234429                        99999999999                                  0
+D00067138441                        99999999999                                  0
+D00868331385                        99999999999                                  0
+
+             max_cur_creditlimit_inst_12m (df1) max_cur_creditlimit_inst_12m (df2)
+DNB_DUNS                                                                          
+D00180234429                        99999999999                                  0
+D00067138441                        99999999999                                  0
+
+             org_credit_loan_amount_1_48m (df1) org_credit_loan_amount_1_48m (df2)
+DNB_DUNS                                                                          
+D00067138441                        99999999999                                  0
+D00180234429                        99999999999                                  0
+D00018669871                        99999999999                                  0
+D00868331385                        99999999999                                  0
+
+             max_inst_pst_due_b4p_48m (df1) max_inst_pst_due_b4p_48m (df2)
+DNB_DUNS                                                                  
+D00067138441                    99999999999                              0
+D00018669871                    99999999999                              0
+
+             term_utiliz_48m (df1) term_utiliz_48m (df2)
+DNB_DUNS                                                
+D00018669871                 99.99                 99.98
+D00868331385                 99.99                 99.98
+D00180234429                 99.99                 99.98
+D00067138441                 99.99                 99.98
+
+             pct_pd_ag2p_bal_inst_48m (df1) pct_pd_ag2p_bal_inst_48m (df2)
+DNB_DUNS                                                                  
+D00067138441                          99.99                           0.00
+D00018669871                          99.99                           0.00
+
+             total_past_due_cat4p_inst_12m (df1) total_past_due_cat4p_inst_12m (df2)
+DNB_DUNS                                                                            
+D00067138441                         99999999999                                   0
+
+             max_3_r_pmt_bal_36m (df1) max_3_r_pmt_bal_36m (df2)
+DNB_DUNS                                                        
+D00072060205                  814.1666                   814.167
+D00074849688                  247.3333                   247.333
+D00020660346                  341.7307                   341.731
+D00074804501                  353.6363                   353.636
+D00071375828                  296.6666                   296.667
+D00006996763                  135.9035                   135.904
+D00835406539                  626.1111                   626.111
+D00124863999                  112.4285                   112.429
+D00806715603                 1058.6315                   1058.63
+D00045224250                  198.8181                   198.818
+
+             max_fin_r_pmt_bal_cur (df1) max_fin_r_pmt_bal_cur (df2)
+DNB_DUNS                                                            
+D00092282839                    116.0555                     116.056
+D00062661269                    131.5714                     131.571
+D00199163007                    185.4285                     185.429
+D00043508290                    317.6666                     317.667
+D00073906083                    160.5454                     160.545
+D00003255213                    334.1666                     334.167
+D00072656630                    133.3333                     133.333
+D00835543521                    106.9354                     106.935
+D00956914337                    714.2857                     714.286
+D00075284901                    192.0632                     192.063
+
+             term_utiliz_36m (df1) term_utiliz_36m (df2)
+DNB_DUNS                                                
+D00067138441                 99.99                 99.98
+D00018669871                 99.99                 99.98
+D00868331385                 99.99                 99.98
+D00180234429                 99.99                 99.98
+
+             pct_pd_ag3p_bal_inst_48m (df1) pct_pd_ag3p_bal_inst_48m (df2)
+DNB_DUNS                                                                  
+D00018669871                          99.99                           0.00
+D00067138441                          99.99                           0.00
+
+             charge_off_amount_inst_48m (df1) charge_off_amount_inst_48m (df2)
+DNB_DUNS                                                                      
+D00067138441                      99999999999                                0
+D00018669871                      99999999999                                0
+D00868331385                      99999999999                                0
+D00180234429                      99999999999                                0
+
+             pct_pd_ag1p_bal_inst_12m (df1) pct_pd_ag1p_bal_inst_12m (df2)
+DNB_DUNS                                                                  
+D00067138441                          99.99                           0.00
+
+             avg_fin_r_pmt_bal_cur (df1) avg_fin_r_pmt_bal_cur (df2)
+DNB_DUNS                                                            
+D00040346694                    158.3632                     158.363
+
+             org_credit_lease_amount_4_36m (df1) org_credit_lease_amount_4_36m (df2)
+DNB_DUNS                                                                            
+D00868331385                         99999999999                                   0
+D00067138441                         99999999999                                   0
+
+             max_cur_creditlimit_fin_36m (df1) max_cur_creditlimit_fin_36m (df2)
+DNB_DUNS                                                                        
+D00868331385                               NaN                                 0
+D00067138441                               NaN                                 0
+D00180234429                               NaN                                 0
+
+             max_inst_pst_due_b4p_36m (df1) max_inst_pst_due_b4p_36m (df2)
+DNB_DUNS                                                                  
+D00067138441                    99999999999                              0
+D00018669871                    99999999999                              0
+
+             avg_fin_liq_bal_vel_cur (df1) avg_fin_liq_bal_vel_cur (df2)
+DNB_DUNS                                                                
+A00047675735                            -0                       -0.1901
+D00052690047                             2                        1.5629
+D00028404242                            47                       46.9902
+D00030671002                            -6                       -6.4471
+A00049579141                            -2                       -2.3780
+D00040346694                         65592                    65592.2641
+D00099181055                            11                       10.8845
+D00006296743                             2                        2.4011
+D00072656630                            13                       12.5028
+D00074421199                            19                       19.3014
+
+             avg_fin_liq_bal_vel_12m (df1) avg_fin_liq_bal_vel_12m (df2)
+DNB_DUNS                                                                
+D00061189981                             1                        1.3721
+D00006147177                           -22                      -22.2620
+D00616034245                             3                        3.3269
+D00047107032                             7                        6.8148
+D00110138463                          -265                     -265.4597
+D00005926100                            21                       20.6829
+D00826939985                            -2                       -1.9473
+D00069657682                             5                        4.8650
+D00081867624                             4                        3.9642
+D00074449257                            27                       27.0629
+
+             card_utiliz_cur (df1) card_utiliz_cur (df2)
+DNB_DUNS                                                
+D00038088415                  0.00                 99.98
+D00055433197                  0.00                 99.98
+D00968505995                  0.00                 99.98
+D00798321803                  0.00                 99.98
+D00079465608                  0.00                 99.98
+D00035542711                  0.00                 99.98
+D00028404242                  0.00                 99.98
+D00001534676                  0.00                 99.98
+D00621417633                  0.00                 99.98
+A00006703158                  0.00                 99.98
+
+             total_past_due_cat3_inst_36m (df1) total_past_due_cat3_inst_36m (df2)
+DNB_DUNS                                                                          
+D00018669871                        99999999999                                  0
+D00067138441                        99999999999                                  0
+
+             max_inst_pst_due_b2_48m (df1) max_inst_pst_due_b2_48m (df2)
+DNB_DUNS                                                                
+D00067138441                   99999999999                             0
+D00018669871                   99999999999                             0
+
+             avg_fin_r_pmt_bal_12m (df1) avg_fin_r_pmt_bal_12m (df2)
+DNB_DUNS                                                            
+D00003459177                    235.5717                     235.572
+D00001954718                   4490.1886                     4490.19
+A00050508356                    301.3333                     301.333
+
+             max_cur_creditlimit_inst_48m (df1) max_cur_creditlimit_inst_48m (df2)
+DNB_DUNS                                                                          
+D00180234429                        99999999999                                  0
+D00067138441                        99999999999                                  0
+D00868331385                        99999999999                                  0
+
+             total_past_due_cat2_inst_12m (df1) total_past_due_cat2_inst_12m (df2)
+DNB_DUNS                                                                          
+D00067138441                        99999999999                                  0
+
+             max_cur_creditlimit_fin_cur (df1) max_cur_creditlimit_fin_cur (df2)
+DNB_DUNS                                                                        
+D00180234429                               NaN                                 0
+D00067138441                               NaN                                 0
+A00019267459                               NaN                                 0
+D00836015990                               NaN                                 0
+
+             num_acct_inst_dlq_ag3p_36m (df1) num_acct_inst_dlq_ag3p_36m (df2)
+DNB_DUNS                                                                      
+D00018669871                           999999                                0
+D00180234429                           999999                                0
+D00067138441                           999999                                0
+
+             num_acct_inst_dlq_ag4p_36m (df1) num_acct_inst_dlq_ag4p_36m (df2)
+DNB_DUNS                                                                      
+D00180234429                           999999                                0
+D00868331385                           999999                                0
+D00067138441                           999999                                0
+D00018669871                           999999                                0
+
+             num_acct_inst_dlq_ag2p_48m (df1) num_acct_inst_dlq_ag2p_48m (df2)
+DNB_DUNS                                                                      
+D00067138441                           999999                                0
+D00180234429                           999999                                0
+D00018669871                           999999                                0
+
+             min_inst_liq_bal_vel_cur (df1) min_inst_liq_bal_vel_cur (df2)
+DNB_DUNS                                                                  
+D00041077983                             -3                        -3.1038
+D00014960165                             -4                        -3.9642
+D00001368265                             -3                        -2.7443
+D00006988307                              0                         0.0416
+D00161589254                             -5                        -4.8033
+D00075262048                             -5                        -5.1155
+D00826949224                              0                         0.2051
+D00056625908                             -2                        -1.8073
+D00805621927                             -1                        -0.6557
+D00006932446                            -15                       -15.2459
+
+             max_cur_creditlimit_1_12m (df1) max_cur_creditlimit_1_12m (df2)
+DNB_DUNS                                                                    
+D00180234429                     99999999999                               0
+D00067138441                     99999999999                               0
+
+             num_acct_inst_dlq_ag4p_12m (df1) num_acct_inst_dlq_ag4p_12m (df2)
+DNB_DUNS                                                                      
+D00067138441                           999999                                0
+D00180234429                           999999                                0
+
+             pct_pd_ag4p_bal_inst_48m (df1) pct_pd_ag4p_bal_inst_48m (df2)
+DNB_DUNS                                                                  
+D00018669871                          99.99                           0.00
+D00067138441                          99.99                           0.00
+
+             max_3_r_pmt_bal_cur (df1) max_3_r_pmt_bal_cur (df2)
+DNB_DUNS                                                        
+D00038107744                  260.6666                   260.667
+D00001673763                  172.7575                   172.758
+D00043508290                  317.6666                   317.667
+D00199163007                  185.4285                   185.429
+D00042653634                  231.5718                   231.572
+D00049014509                  887.0625                   887.063
+D00092282839                  116.0555                   116.056
+D00001368265                  207.6666                   207.667
+D00956914337                  517.5853                   517.585
+D00003335338                  125.0588                   125.059
+
+             max_fin_liq_bal_vel_cur (df1) max_fin_liq_bal_vel_cur (df2)
+DNB_DUNS                                                                
+D00001161793                          7449                     7448.7744
+A00020316089                            11                       11.4303
+A00003105903                             1                        0.9975
+D00064165053                          1514                     1514.1988
+A00001828867                            -1                       -0.7497
+D00061207064                           218                      218.1487
+A00049287226                             2                        2.4062
+A00018115167                             2                        2.4231
+D00006923160                            18                       18.1188
+D00038107744                          1589                     1588.5795
+
+             total_past_due_cat2_inst_48m (df1) total_past_due_cat2_inst_48m (df2)
+DNB_DUNS                                                                          
+D00018669871                        99999999999                                  0
+D00067138441                        99999999999                                  0
+
+             pct_co_trd_inst_36m (df1) pct_co_trd_inst_36m (df2)
+DNB_DUNS                                                        
+D00180234429                    999.99                      0.00
+D00018669871                    999.99                      0.00
+D00868331385                    999.99                      0.00
+D00067138441                    999.99                      0.00
+
+             max_fin_liq_bal_vel_12m (df1) max_fin_liq_bal_vel_12m (df2)
+DNB_DUNS                                                                
+D00050955624                            26                       26.0199
+D00196355015                            50                       50.3149
+D00001344621                          1920                     1919.5862
+D00024845789                             7                        6.9327
+D00042653634                        531502                   531502.3954
+A00050894499                             5                        4.6451
+D00094809993                            52                       51.8980
+A00006000307                             2                        1.6236
+D00805621927                          3229                     3228.7099
+D00006932446                            87                       86.5194
+
+             num_acct_inst_dlq_ag2p_36m (df1) num_acct_inst_dlq_ag2p_36m (df2)
+DNB_DUNS                                                                      
+D00067138441                           999999                                0
+D00018669871                           999999                                0
+D00180234429                           999999                                0
+
+             max_inst_pst_due_b2_36m (df1) max_inst_pst_due_b2_36m (df2)
+DNB_DUNS                                                                
+D00018669871                   99999999999                             0
+D00067138441                   99999999999                             0
+
+             max_inst_pst_due_b4p_12m (df1) max_inst_pst_due_b4p_12m (df2)
+DNB_DUNS                                                                  
+D00067138441                    99999999999                              0
+
+             total_past_due_cat3_inst_48m (df1) total_past_due_cat3_inst_48m (df2)
+DNB_DUNS                                                                          
+D00018669871                        99999999999                                  0
+D00067138441                        99999999999                                  0
+
+             max_inst_pst_due_b3_48m (df1) max_inst_pst_due_b3_48m (df2)
+DNB_DUNS                                                                
+D00018669871                   99999999999                             0
+D00067138441                   99999999999                             0
+
+             card_utiliz_12m (df1) card_utiliz_12m (df2)
+DNB_DUNS                                                
+D00035542711                  0.00                 99.98
+A00031183928                  0.00                 99.98
+D00028404242                  0.00                 99.98
+D00038088415                  0.00                 99.98
+D00003100542                  0.00                 99.98
+D00798321803                  0.00                 99.98
+D00001534676                  0.00                 99.98
+D00032827657                  0.00                 99.98
+
+             max_cur_creditlimit_4_48m (df1) max_cur_creditlimit_4_48m (df2)
+DNB_DUNS                                                                    
+D00868331385                     99999999999                               0
+D00067138441                     99999999999                               0
+D00180234429                     99999999999                               0
+
+             max_cur_creditlimit_4_12m (df1) max_cur_creditlimit_4_12m (df2)
+DNB_DUNS                                                                    
+D00067138441                     99999999999                               0
+D00180234429                     99999999999                               0
+
+             inst_utiliz_36m (df1) inst_utiliz_36m (df2)
+DNB_DUNS                                                
+D00067138441                 99.99                 99.98
+D00180234429                 99.99                 99.98
+D00868331385                 99.99                 99.98
+
+             charge_off_amount_inst_12m (df1) charge_off_amount_inst_12m (df2)
+DNB_DUNS                                                                      
+D00180234429                      99999999999                                0
+D00067138441                      99999999999                                0
+
+             min_inst_liq_bal_vel_48m (df1) min_inst_liq_bal_vel_48m (df2)
+DNB_DUNS                                                                  
+D00161589254                            -89                       -88.9896
+D00047107032                            -15                       -14.5344
+D00003289725                           -307                      -306.5362
+D00064019995                            -69                       -68.8349
+D00006904783                            -70                       -70.4221
+D00004241550                            -40                       -39.9049
+D00967296120                           -723                      -723.4605
+D00006996763                            -76                       -75.9573
+D00056625908                            -21                       -20.7199
+D00001294131                            -93                       -92.9599
+
+             org_credit_loan_amount_1_36m (df1) org_credit_loan_amount_1_36m (df2)
+DNB_DUNS                                                                          
+D00868331385                        99999999999                                  0
+D00067138441                        99999999999                                  0
+D00018669871                        99999999999                                  0
+D00180234429                        99999999999                                  0
+
+             total_past_due_cat4p_inst_36m (df1) total_past_due_cat4p_inst_36m (df2)
+DNB_DUNS                                                                            
+D00067138441                         99999999999                                   0
+D00018669871                         99999999999                                   0
+
+             min_3_r_pmt_bal_cur (df1) min_3_r_pmt_bal_cur (df2)
+DNB_DUNS                                                        
+D00092282839                  116.0555                   116.056
+
+             max_fin_r_pmt_bal_36m (df1) max_fin_r_pmt_bal_36m (df2)
+DNB_DUNS                                                            
+D00014960165                    591.9122                     591.912
+D00962162983                    972.6666                     972.667
+D00073299026                    342.5333                     342.533
+D00835406539                    626.1111                     626.111
+D00064019995                   1378.8571                     1378.86
+D00077312049                    940.5714                     940.571
+D00001161793                    774.5833                     774.583
+D00041157397                    671.1666                     671.167
+D00793691135                    434.5909                     434.591
+D00004175550                    833.3333                     833.333
+
+             min_fin_r_pmt_bal_48m (df1) min_fin_r_pmt_bal_48m (df2)
+DNB_DUNS                                                            
+A00050508356                    301.3333                     301.333
+
+             org_creditlimit_inst_36m (df1) org_creditlimit_inst_36m (df2)
+DNB_DUNS                                                                  
+D00067138441                    99999999999                              0
+D00868331385                    99999999999                              0
+
+             min_fin_r_pmt_bal_36m (df1) min_fin_r_pmt_bal_36m (df2)
+DNB_DUNS                                                            
+A00050508356                    301.3333                     301.333
+
+             pct_pd_ag1p_bal_inst_48m (df1) pct_pd_ag1p_bal_inst_48m (df2)
+DNB_DUNS                                                                  
+D00067138441                          99.99                           0.00
+D00018669871                          99.99                           0.00
+
+             pct_pd_ag1p_bal_inst_36m (df1) pct_pd_ag1p_bal_inst_36m (df2)
+DNB_DUNS                                                                  
+D00067138441                          99.99                           0.00
+D00018669871                          99.99                           0.00
+
+             avg_3_r_pmt_bal_cur (df1) avg_3_r_pmt_bal_cur (df2)
+DNB_DUNS                                                        
+D00092282839                  116.0555                   116.056
+D00040346694                  294.9209                   294.921
+
+Sample Rows Only in df2 (First 10 Columns)
+------------------------------------------
+
+                  dnb_duns business_name      street_address      city state    zip trade_style sbfe_powered_score sbfe_scorecard_id sbfe_score_reason_code_1
+DNB_DUNS                                                                                                                                                     
+A00018324058  A00018324058         BRIAN  731 MACGREGOR ROAD  LOCKPORT    IL  60441         NaN                NaN               NaN                      NaN
+
